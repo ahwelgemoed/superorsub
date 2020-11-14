@@ -10,7 +10,7 @@ export class SuperorSub {
     this.init();
   }
 
-  toggelSuperorSub(bool: boolean) {
+  toggleSuperorSub(bool: boolean) {
     this.isSuper = bool;
   }
   private init() {

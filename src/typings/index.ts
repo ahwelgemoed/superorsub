@@ -7,9 +7,3 @@ export type mainIncomingSettings = {
   isSuper: boolean;
   keyCombo?: string[];
 };
-
-// export enum KeyCodes {
-//   ALT = 'altKey',
-//   CTRL = 'ctrlKey',
-//   SHIFT = 'shiftKey',
-// }
