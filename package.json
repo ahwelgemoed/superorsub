@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -44,6 +44,13 @@
       "path": "dist/superorsub.esm.js",
       "limit": "10 KB"
     }
+  ],
+  "keywords": [
+    "subscript",
+    "superscript",
+    "chemical",
+    "chemical formula",
+    "HTML Input"
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.7.0",
