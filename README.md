@@ -1,15 +1,21 @@
-<h1 align="center">Super- or Sub Script</h1>
-
-A package to Type Super or Subscript in HTML inputs with minimal setup.
-
 <p align="center">
-<img  align="center" alt="headerIMG" src="./assets/Super.png" target="_blank" />
-</p>
+
+<h1 align="center">Super- or Sub Script</h1>
 <p align="center">
   <a href="">
     <img alt="License: MIT" src="https://img.shields.io/github/issues/ahwelgemoed/lottie-mendix-widget" target="_blank" />
   </a>
   <br>
+</p>
+A package to Type Super or Subscript in HTML inputs with minimal setup.
+</p>
+
+View on Images and Gifs and ReadMe/Docs on [GitHub](https://github.com/ahwelgemoed/superorsub#super--or-sub-script)
+
+<p align="center">
+<img  align="center" alt="headerIMG" src="./assets/Super.png" target="_blank" />
+<h4>Example:</h4>
+<img  align="center" alt="headerIMG" src="./assets/Super.gif" target="_blank" />
 </p>
 
 This is a package that solves and Issue I had some time ago. How to write Chemical Formulas on A website without knowing difficult Key Combos.
@@ -28,14 +34,34 @@ Under the hood it uses [KeyboardEvent.code](https://developer.mozilla.org/en-US/
 
 Currently the only supported Key combonatiation are `ctrlKey` + `shiftKey` + `1, 2, 3, 4, 5, 6, 7, 8, 9, 0, -, +, [, ]`
 
+## How to Install
+
+```bash
+npm i superorsub
+```
+
+or
+
+```bash
+yarn add superorsub
+```
+
 ## How To use it.
 
 ```js
 import { SuperorSub } from 'superorsub';
 
-const { toggleSuperorSub } = new SuperorSub({
+const superorsub = new SuperorSub({
   isSuper: true,
 });
+
+// Toggle isSuper (Function to change isSuperValue)
+
+superorsub.toggleSuperorSub();
+
+// Current isSuper  Value (Read only Boolean)
+
+superorsub.isSuper();
 ```
 
 ### Initiate Class

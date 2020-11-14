@@ -2,7 +2,7 @@ import { _keyCodes } from './utils';
 import { keyCodeTypes, mainIncomingSettings } from './typings';
 
 export class SuperorSub {
-  private isSuper: boolean;
+  isSuper: boolean;
   private _currentElement!: HTMLInputElement;
 
   constructor({ isSuper }: mainIncomingSettings) {
@@ -26,7 +26,7 @@ export class SuperorSub {
     }
   }
 
-  private keyDown = async (e: any) => {
+  private keyDown = async (e: KeyboardEvent) => {
     if (e.ctrlKey && e.shiftKey) {
       for (let index = 0; index < _keyCodes.length; index++) {
         const keyCode: keyCodeTypes = _keyCodes[index];

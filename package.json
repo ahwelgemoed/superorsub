@@ -32,6 +32,7 @@
     "trailingComma": "es5"
   },
   "name": "superorsub",
+  "description": "A package to Type Super or Subscript in HTML inputs with minimal setup.",
   "author": "ahwelgemoed",
   "module": "dist/superorsub.esm.js",
   "size-limit": [
