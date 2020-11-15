@@ -61,7 +61,7 @@ superorsub.toggleSuperorSub();
 
 // Current isSuper  Value (Read only Boolean)
 
-superorsub.isSuper();
+superorsub.isSuper;
 ```
 
 ### Initiate Class
