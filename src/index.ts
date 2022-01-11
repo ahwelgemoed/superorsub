@@ -1,7 +1,7 @@
 import { _keyCodes } from './utils';
 import { keyCodeTypes, mainIncomingSettings } from './typings';
 
-export class SuperorSub {
+export class SuperOrSub {
   isSuper: boolean;
   private _currentElement!: HTMLInputElement;
 
