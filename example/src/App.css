@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  line-height: 40px;
 }
 
 .App-logo {
@@ -35,4 +36,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+  background-color: #b1d7ff;
+  border: none;
+  border: 1px solid #9ecafa;
+  padding: 10px;
+  font-size: 12px;
+  /* border-radius: 12px; */
+}
+input {
+  background-color: #9ecafa;
+  font-size: 20px;
+  padding: 8px;
+  margin: 10px;
+  line-height: 40px;
+  border: none;
 }

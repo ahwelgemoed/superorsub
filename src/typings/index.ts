@@ -1,7 +1,7 @@
-export type keyCodeTypes = {
+export type KeyCodeTypes = {
   code: string;
-  supervalue: string;
-  subvalue: string;
+  supValue: string;
+  subValue: string;
 };
 export type mainIncomingSettings = {
   isSuper: boolean;

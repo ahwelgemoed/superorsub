@@ -1,27 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import SuperOrSub from 'superorsub';
+import { SubSuper } from 'superorsub';
+import { useState } from 'react';
 
-const t = new SuperOrSub.SuperOrSub({ isSuper: false });
-
+const mySubOrSuper = SubSuper.getInstance({
+  subOrSuper: 'supValue',
+});
 function App() {
+  const [myTestInput, setMyTestInput] = useState<string>('H₂O');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src="../assets/logo.png" />
+      <h3>
+        Press <kbd>control</kbd> + <kbd>shift</kbd> and number to write in sub-
+        or super script
+      </h3>
+      <p>
+        <button onClick={() => mySubOrSuper.toggleScript()}>Toggle</button>
+        <button onClick={() => mySubOrSuper.setToSupScript()}>
+          Super Script
+        </button>
+        <button onClick={() => mySubOrSuper.setToSubScript()}>
+          Sub Script
+        </button>
+      </p>
+      <h5>Value in State: {myTestInput}</h5>
+      <input
+        value={myTestInput}
+        onChange={e => setMyTestInput(e.target.value)}
+      />
     </div>
   );
 }

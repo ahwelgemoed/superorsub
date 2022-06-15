@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "2.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -8,10 +8,10 @@
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "scripts": {
-    "start": "tsdx watch",
+    "dev": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
@@ -35,6 +35,13 @@
   "description": "A package to Type Super or Subscript in HTML inputs with minimal setup.",
   "author": "ahwelgemoed",
   "module": "dist/superorsub.esm.js",
+  "keywords": [
+    "subscript",
+    "superscript",
+    "chemical",
+    "chemical formula",
+    "HTML Input"
+  ],
   "size-limit": [
     {
       "path": "dist/superorsub.cjs.production.min.js",
@@ -45,19 +52,18 @@
       "limit": "10 KB"
     }
   ],
-  "keywords": [
-    "subscript",
-    "superscript",
-    "chemical",
-    "chemical formula",
-    "HTML Input"
-  ],
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^4.7.0",
-    "husky": "^4.3.0",
-    "size-limit": "^4.7.0",
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "husky": "^8.0.1",
+    "size-limit": "^7.0.8",
     "tsdx": "^0.14.1",
-    "tslib": "^2.0.3",
-    "typescript": "^4.0.5"
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

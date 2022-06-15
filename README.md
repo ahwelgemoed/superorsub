@@ -2,21 +2,15 @@
 
 <h1 align="center">Super- or Sub Script</h1>
 <p align="center">
-  <a href="">
-    <img alt="License: MIT" src="https://img.shields.io/github/issues/ahwelgemoed/lottie-mendix-widget" target="_blank" />
-  </a>
-  <br>
 </p>
 A package to Type Super or Subscript in HTML inputs with minimal setup.
 </p>
 
-View on Images and Gifs and ReadMe/Docs on [GitHub](https://github.com/ahwelgemoed/superorsub#super--or-sub-script)
-
 <p align="center">
-<img  align="center" alt="headerIMG" src="./assets/Super.png" target="_blank" />
-<h4>Example:</h4>
-<img  align="center" alt="headerIMG" src="./assets/Super.gif" target="_blank" />
+<img  align="center" alt="headerIMG" src="https://img.shields.io/github/issues/ahwelgemoed/superorsub/assets/logo.png" target="_blank" />
 </p>
+
+#### Demo [Here]()
 
 This is a package that solves and Issue I had some time ago. How to write Chemical Formulas on A website without knowing difficult Key Combos.
 
@@ -48,20 +42,16 @@ yarn add superorsub
 
 ## How To use it.
 
-```js
+```ts
 import { SuperorSub } from 'superorsub';
 
-const superorsub = new SuperorSub({
-  isSuper: true,
+const mySubOrSuper = SubSuper.getInstance({
+  subOrSuper: 'supValue',
 });
 
 // Toggle isSuper (Function to change isSuperValue)
 
-superorsub.toggleSuperorSub();
-
-// Current isSuper  Value (Read only Boolean)
-
-superorsub.isSuper;
+superorsub.toggleScript();
 ```
 
 ### Initiate Class
@@ -70,9 +60,9 @@ Setting `isSuper` to true will make it Type in Super Script, setting it to false
 
 ### Props/Methods
 
-|                             | Type   | Info                                                                                  |
-| --------------------------- | ------ | ------------------------------------------------------------------------------------- |
-| `toggleSuperorSub(boolean)` | method | Passing a boolean in this method will change the isSuper to whatever value is passed. |
+|                  | Type   | Info                                                                                  |
+| ---------------- | ------ | ------------------------------------------------------------------------------------- |
+| `toggleScript()` | method | Passing a boolean in this method will change the isSuper to whatever value is passed. |
 
 So you can initiate the Class and set is Super and leave it if only Super or Sub script is necessary. With `toggleSuperorSub` you can make the user toggle between that.
 
