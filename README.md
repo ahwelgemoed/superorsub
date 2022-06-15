@@ -70,3 +70,4 @@ So you can initiate the Class and set is Super and leave it if only Super or Sub
 
 - Let user select Key Combos To Trigger
 - Add more options than just Numeric Chars (Full list of Alphanumeric)
+- Local Dev "superorsub": "file:../."
