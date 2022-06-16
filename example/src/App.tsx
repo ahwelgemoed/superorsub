@@ -9,7 +9,7 @@ function App() {
   const [myTestInput, setMyTestInput] = useState<string>('H₂O');
   return (
     <div className="App">
-      <img src="../assets/logo.png" />
+      <img src="https://raw.githubusercontent.com/ahwelgemoed/superorsub/main/example/assets/logo.png" />
       <h3>
         Press <kbd>control</kbd> + <kbd>shift</kbd> and number to write in sub-
         or super script

@@ -7,10 +7,10 @@ A package to Type Super or Subscript in HTML inputs with minimal setup.
 </p>
 
 <p align="center">
-<img  align="center" alt="headerIMG" src="https://img.shields.io/github/issues/ahwelgemoed/superorsub/assets/logo.png" target="_blank" />
+<img  align="center" alt="headerIMG" src="https://raw.githubusercontent.com/ahwelgemoed/superorsub/main/example/assets/logo.png" target="_blank" />
 </p>
 
-#### Demo [Here]()
+#### Demo [Here](superorsub.welgemoed.io)
 
 This is a package that solves and Issue I had some time ago. How to write Chemical Formulas on A website without knowing difficult Key Combos.
 
